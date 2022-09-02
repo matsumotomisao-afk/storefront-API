@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="Scripts/jquery-3.4.1.min.js"></script>
+    <!--<script src="Get_myProducts.js"></script>-->
+    <link rel="stylesheet" href="Storefront.css">
+
+</head>
+<body>
+    <div class="products">
+        <div class="yokonarabe">
+            <p class="display-3">Now Testing</p>
+            <script src="Get_myProducts.js"></script>
+            <!--<script>
+                    const query = `{
+                    shop {
+                        name
+                    }
+    }`;
+
+                    function apiCall(query) {
+                        return fetch("https://xn-u9jtffy9n7a2539k.myshopify.com/api/2020-10/graphql.json", {
+                            //[shop-name]にはストアのURLを入力します。
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/graphql",
+                                "X-Shopify-Storefront-Access-Token": "bb2d70a8be570a704c96ac989b5431fe", //Storefront APIのアクセストークンを入力します
+                            },
+                            body: query,
+                        }).then((response) => response.json());
+                    }
+
+                    apiCall(query).then((response) => {
+                        console.log(response);
+                    });
+
+                    function getProducts() {
+                        const query = `{
+                  products(first:10) {
+                    edges {
+                      node {
+                        title
+                        description
+                        onlineStoreUrl
+
+                        images(first: 1) {
+                          edges{
+                            node {
+                              altText
+                              transformedSrc(maxWidth: 400, maxHeight: 400)
+                            }
+
+                          }
+                        }
+                    variants(first: 1) {
+                          edges {
+                            node {
+                              priceV2 {
+                                amount
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+    }`;
+                        return apiCall(query);
+                    }
+
+
+
+
+
+                    $(document).ready(function () {
+                        const $app = $("#app");
+                        getProducts().then((response) => {
+                            $app.append("<div class='yokonarabe col-xs-12'> </div>");
+                            const $products = $(".products");
+
+                            response.data.products.edges.forEach((product) => {
+
+                                const template = `<div class="yokonarabe col-xs-12" background-color:#189AE7;>
+
+
+
+    <img  alt="${product.node.images.edges[0].node.altText}" src="${product.node.images.edges[0].node.transformedSrc}">
+    <h3>${product.node.title.substring(0, 12) + "..."}</h3>
+
+    <p> ${product.node.description.substring(0, 150) + "..."}</p>
+    <p><details><summary></summary>${product.node.description.substring(150,)}</details></p>
+    <p>PRICE</p>
+    <p>${product.node.variants.edges[0].node.priceV2.amount + " USD"}</p>
+    <p>Product-Url</p>
+    <p>${product.node.onlineStoreUrl}"<br><br>
+    <p><a href="${product.node.onlineStoreUrl}" + target="_blank" + rel="noopener noreferrer">見る</a></p>
+                            </div> `;
+                                $products.append(template);
+                            });
+
+                        });
+
+                    });
+                </script>-->
+
+        </div>
+        </div>
+
+</body>
+</html>
