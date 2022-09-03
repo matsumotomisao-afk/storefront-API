@@ -1,0 +1,88 @@
+/* Type valid CSS here */
+.container{
+    widht:100%
+}
+#top{
+    margin-top:5px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:0px;
+    margin-right:0px;
+    text-align:center;
+    background-color:#9A7171;
+    width:100%;
+}
+
+p {
+  font-size: 0.9em;
+  color: #777;
+}
+p1{ 
+    font-size: 1.1em;
+  color: #777;
+    
+}
+h5{
+     font-size: 1.6em;
+    color:yellow;
+}
+a{
+    color:yellow;
+    font-size: 1.5em;
+}
+#img{
+    width:100%;
+    background-color:white;
+     padding-top:0px;
+     padding-bottom:10px;
+}
+#temp{
+     background-color:#4A7DA1;
+    color:white;
+     border-width:3px;
+	border-color:white;
+    padding:20px;
+    width:93%;
+    /*93%はイメージの幅に合わせた*/
+   margin: 0 auto;
+    /*自身のdivを中央よせ*/
+}
+.products{
+     background-color:#8E8F8D;
+  padding: 60px 60px 60px 60px;
+  color: #70736D;
+  text-align: center;
+    border-width:5px;
+	border-color:red;
+  	display:d-flex;
+      flex-wrap:wrap;
+    justify-content: space-around;
+    justify-content: center;
+    align-content: space-evenly;
+    align-content: flex-start;
+     margin:50;
+  
+}
+.products > div {
+  /*background: #ddd;*/
+ overflow: auto;
+  min-width: 0;
+ 
+}
+.yokonarabe{
+   text-align:center;
+   font-size: 0.9em;
+    padding-top:4px;
+     border: solid  #B3B6B2;
+    border-width: 4px;
+      background-color:white;
+  width:19%;
+  margin-top:0px;
+padding-bottom:7px;
+    /*div.tempとの空き*/
+    margin: 0 auto;
+} 
+summary {
+  cursor: pointer;
+    list-style-image: url(none);
+}
