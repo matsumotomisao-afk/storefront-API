@@ -1,0 +1,86 @@
+
+/* Type valid CSS here */
+
+/* Type valid CSS here */
+div{
+    margin-bottom:0px;
+}
+.container{
+    width:100%
+}
+#top{
+    margin-top:5px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left:0px;
+    margin-right:0px;
+    text-align:center;
+    background-color:#9A7171;
+    width:100%;
+}
+
+p {
+  font-size: 0.9em;
+  color: #777;
+}
+p1{ 
+    font-size: 1.1em;
+  color: #777;
+    
+}
+h5{
+     font-size: 1.6em;
+    color:yellow;
+}
+a{
+    color:yellow;
+    font-size: 1.5em;
+}
+#img{
+    width:100%;
+    background-color:white;
+     padding-top:0px;
+     padding-bottom:10px;
+}
+#temp{
+     background-color:#4A7DA1;
+    color:white;
+     border-width:3px;
+	border-color:white;
+    padding:20px;
+    width:93%;
+    /*93%はイメージの幅に合わせた*/
+   margin: 0 auto;
+    /*自身のdivを中央よせ*/
+}
+.products{
+   
+  text-align: center;
+    border-width:5px;
+	border-color:red;
+  	display:flex;
+    justify-content: center;
+    /*子要素をCenterに*/
+ /*  width: 380px;
+  height: 100%;*/
+   /* overflow-x: scroll;*/
+     /*margin-bottom:5px;*/
+  
+}
+
+.yokonarabe{
+  
+   font-size: 0.9em;
+    padding-top:0px;
+     border: solid  #B3B6B2;
+    border-width: 4px;
+      background-color:white;
+ 
+padding-bottom:7px;
+    /*div.tempとの空き*/
+    /*margin: 0 auto;*/
+} 
+summary {
+  cursor: pointer;
+    list-style-image: url(none);
+}
